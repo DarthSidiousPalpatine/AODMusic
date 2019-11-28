@@ -1,0 +1,56 @@
+{ 
+  "item.gusli.1": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli1"
+    ]
+  },
+    "item.gusli.2": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli2"
+    ]
+  },
+    "item.gusli.3": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli3"
+    ]
+  },
+    "item.gusli.4": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli4"
+    ]
+  },
+    "item.gusli.5": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli5"
+    ]
+  },
+    "item.gusli.6": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli6"
+    ]
+  },
+    "item.gusli.7": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli7"
+    ]
+  },
+    "item.gusli.8": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli8"
+    ]
+  },
+    "item.gusli.9": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:gusli9"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+package com.darth.aodmusic.Items;
+
+import org.lwjgl.input.Keyboard;
+
+import com.darth.aodmusic.Ref;
+import com.dunk.tfc.Reference;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
+
+public class Gusli extends Item{
+	
+	IIcon Icon;
+	
+	public Gusli()
+	{
+	this.setUnlocalizedName("Gusli");
+	this.setCreativeTab(CreativeTabs.tabMaterials);
+	}
+
+	private void playClientMusic(ItemStack itemstack, World world, EntityPlayer entityplayer)
+	{
+		if(!Keyboard.isKeyDown(Keyboard.KEY_NUMPAD1))
+		{
+			world.playSoundAtEntity(entityplayer, Ref.MOD_ID + ":item.gusli.1", 1, 1);
+		}
+		if (!Keyboard.isKeyDown(Keyboard.KEY_NUMPAD2))
+		{
+			world.playSoundAtEntity(entityplayer, Ref.MOD_ID + ":item.gusli.2", 1, 1);
+		}
+		if (!Keyboard.isKeyDown(Keyboard.KEY_NUMPAD3))
+		{
+			world.playSoundAtEntity(entityplayer, Ref.MOD_ID + ":item.gusli.3", 1, 1);
+		}
+		if (!Keyboard.isKeyDown(Keyboard.KEY_NUMPAD4))
+		{
+			world.playSoundAtEntity(entityplayer, Ref.MOD_ID + ":item.gusli.4", 1, 1);
+		}
+		if (!Keyboard.isKeyDown(Keyboard.KEY_NUMPAD5))
+		{
+			world.playSoundAtEntity(entityplayer, Ref.MOD_ID + ":item.gusli.5", 1, 1);
+		}
+	}
+	
+	@Override
+	public void registerIcons(IIconRegister registerer)
+	{
+		this.Icon = registerer.registerIcon(Reference.MOD_ID + ":" + "textures/Gusli.png");
+	}
+	
+	public ItemStack onItemRightClick(ItemStack itemstack, World world, EntityPlayer entityplayer)
+	{
+		
+		if (world.isRemote)
+		{			
+			playClientMusic(itemstack,world,entityplayer);
+		}
+		return itemstack;
+	}
+}

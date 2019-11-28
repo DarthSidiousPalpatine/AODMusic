@@ -1,0 +1,8 @@
+package com.darth.aodmusic;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "aodmusic", name = "AOD Music", version = "1.0.0")
+public class AODMusic {
+
+}

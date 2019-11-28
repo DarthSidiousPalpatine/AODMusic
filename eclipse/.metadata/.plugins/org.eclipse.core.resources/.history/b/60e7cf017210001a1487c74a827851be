@@ -1,0 +1,6 @@
+package com.darth.aodmusic;
+
+@Mod(modid = "aodmusic", name = "AOD Music", version = "1.0.0")
+public class AODMusic {
+
+}

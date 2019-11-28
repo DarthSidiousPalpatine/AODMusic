@@ -1,0 +1,32 @@
+{ 
+  "item.gusli.1": {
+    "category": "ambient",
+    "sounds": [
+      "aodmusic:sounds/gusli1"
+    ]
+  },
+    "item.gusli.2": {
+    "category": "ambient",
+    "sounds": [
+      "gusli2"
+    ]
+  },
+    "item.gusli.3": {
+    "category": "ambient",
+    "sounds": [
+      "gusli3"
+    ]
+  },
+    "item.gusli.4": {
+    "category": "ambient",
+    "sounds": [
+      "gusli4"
+    ]
+  },
+    "item.gusli.5": {
+    "category": "ambient",
+    "sounds": [
+      "gusli5"
+    ]
+  }
+}

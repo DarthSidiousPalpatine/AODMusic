@@ -1,0 +1,16 @@
+package com.darth.aodmusic;
+
+import com.dunk.tfc.Items.ItemPlank;
+
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+
+public class ItemReg extends Items{
+	
+	public static Item Gusli;
+	
+	public static void reg()
+	{
+		Gusli = new com.darth.aodmusic.Items.Gusli().setUnlocalizedName("Gusli");
+	}
+}

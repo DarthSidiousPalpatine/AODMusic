@@ -1,0 +1,19 @@
+package com.darth.aodmusic;
+
+import com.dunk.tfc.Items.ItemPlank;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+
+public class ItemReg extends Items{
+	
+	public static Item Gusli;
+	
+	public static void reg()
+	{
+		Gusli = new com.darth.aodmusic.Items.Gusli().setTextureName("aodmusic:Gusli.png");
+		GameRegistry.registerItem(Gusli, Gusli.getUnlocalizedName());
+	}
+}

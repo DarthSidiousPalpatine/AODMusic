@@ -1,0 +1,11 @@
+package com.darth.aodmusic;
+
+import net.minecraft.init.Items;
+
+public class ItemReg extends Items{
+
+	public static void reg()
+	{
+		
+	}
+}
